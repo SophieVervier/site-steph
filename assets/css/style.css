@@ -1,0 +1,103 @@
+/* Generic Selectors */
+ 
+body {
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 14px;
+   color: #333333;
+   background-color: #F9F9F9;
+   margin:0;
+   margin-top:50px;
+font-family: 'Poiret One', cursive;
+font-family: 'Economica', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Khand', sans-serif;
+}
+
+ 
+/********MENU RESPONSIVE****/
+
+/*Strip the ul of padding and list styling*/
+nav {
+	position: fixed;
+	top: 0;
+}
+
+nav ul {
+	position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*Create a horizontal list with spacing*/
+nav li {
+	display: block;
+	float: left;
+}
+
+/*Style for menu links*/
+nav li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background: #333;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+nav li:hover a {
+	background: #19c589;
+}
+
+.nav-sm {
+	display:none;
+}
+
+.nav-sm ul {
+		display: none;
+		list-style: none;
+		padding: 0px;
+		
+}
+	
+.nav-sm ul li{
+		float: none;
+		text-align: left;
+}
+
+.nav-sm:hover ul {
+		display: inline;
+		position: fixed;
+}
+
+.nav-sm:hover img {
+		display: none;
+}
+
+.nav-sm img {
+		background-color: #333;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	nav {
+			text-align:right;
+			animation-name: fadein;
+			animation-duration: 5s; 
+	}
+	.nav-sm {
+		display:initial;
+	}
+	
+	.nav{
+		display:none;
+	}
+}
