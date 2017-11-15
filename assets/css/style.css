@@ -59,19 +59,19 @@ nav li:hover a {
 	display:none;
 }
 
-.nav-sm ul {
+.nav-sm ul#menu-expanded {
 		display: none;
 		list-style: none;
 		padding: 0px;
 		
 }
 	
-.nav-sm ul li{
+.nav-sm ul#menu-expanded li{
 		float: none;
 		text-align: left;
 }
 
-.nav-sm:hover ul {
+.nav-sm:hover ul#menu-expanded {
 		display: inline;
 		position: fixed;
 }
