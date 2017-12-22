@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
 	font-family: 'Jura', sans-serif;
@@ -5,18 +8,57 @@ body {
 	color:  #fff;
 	background-color: #5d5756;
 	margin:0;
+	width:100%;
 }
+
+/**************carousel**************/
+div#slider{
+	width:100%;
+	overflow:hidden;
+}
+
+div#slider figure{
+	position: relative;
+	width:500%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	left:0;
+	text-align: left;
+	animation: 30s slidy infinite;
+}
+
+div#slider figure img{
+	height: auto;
+	float: left;
+	width:20%;
+}
+
+@keyframes slidy {
+	0% {left: 0%;}
+	20% {left: 0%;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100% {left: -400%;}
+}
+
+
 
 /************** SECTION**************/
 
 section{
-	padding: 40px 20px 40px 20px;
+	padding: 40px 10px 40px 10px;
 	text-align: left;
+	width: 100%;
 }
 
 section header {
 	width: 100%;
-	padding: 0 0%;
+	border: RED;
 	margin: 0;
 	font-family: 'Julius Sans One', sans-serif;
 }
@@ -27,7 +69,8 @@ section header h2{
 }
 
 section header h3{
-	text-align: center
+	text-align: center;
+	font-size: 30px;
 }
 
 #top {
@@ -37,16 +80,20 @@ section header h3{
 
 #top header {
 	display: table;
-	background-image: url(../img/ouverture.jpg);
 	max-width: none;
-	height: 100vh;
-	background-position: center center;
-	animation-name: popin;
-	animation-duration: 1s; 
 }
 
-/******* ARTICLE class service ********/
+/******* ARTICLE********/
+article {
+	width: 100%;
+	border:1px solid red
+}
 
+article h3{
+	text-align: center;
+	font-size: 20px;
+	color: #c1502e;
+}
 
 /******* FOOTER ************/
  footer {
@@ -146,4 +193,33 @@ nav li:hover a {
 	.nav{
 		display:none;
 	}
+}
+
+/*** RESPONSIVE GRID ****/
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
