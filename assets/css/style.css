@@ -29,7 +29,6 @@ div#slider figure{
 }
 
 div#slider figure img{
-	height: auto;
 	float: left;
 	width:20%;
 }
@@ -73,15 +72,6 @@ section header h3{
 	font-size: 30px;
 }
 
-#top {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-#top header {
-	display: table;
-	max-width: none;
-}
 
 /******* ARTICLE********/
 article {
