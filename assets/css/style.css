@@ -103,16 +103,28 @@ nav {
 	position: fixed;
 	top: 0;
 	font-family: 'Julius Sans One', sans-serif;
+    background-color: #454140;
+	width: 100%;
+	position: fixed;
+}
+
+nav div.title {
+	width: 30%;
+	text-align: left;
+	float:left;
+}
+
+nav div.nav {
+	width: 70%;
+	float:left;
 }
 
 nav ul {
-	position: fixed;
-    width: 100%;
+	width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #454140;
 }
 
 /*Create a horizontal list with spacing*/
@@ -183,6 +195,8 @@ nav li:hover a {
 	.nav{
 		display:none;
 	}
+
+
 }
 
 /*** RESPONSIVE GRID ****/
