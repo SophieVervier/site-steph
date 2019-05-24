@@ -5,8 +5,8 @@
 body {
 	font-family: 'Jura', sans-serif;
 	font-size: 16px;
-	color:  #fff;
-	background-color: #5d5756;
+	color:  #5d5756;
+	background-color: #ffff;
 	margin:0;
 	width:100%;
 }
@@ -100,6 +100,7 @@ footer img {
 
 /*Strip the ul of padding and list styling*/
 nav {
+	color: #ffff;
 	position: fixed;
 	top: 0;
 	font-family: 'Julius Sans One', sans-serif;
